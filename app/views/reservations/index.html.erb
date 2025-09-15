@@ -1,0 +1,23 @@
+<h1>Reservations</h1>
+<table border="1" cellpadding="6">
+  <tr>
+    <th>Code</th>
+    <th>Guest ID</th>
+    <th>Room ID</th>
+    <th>Check-in</th>
+    <th>Check-out</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+  <% @reservations.each do |r| %>
+    <tr>
+      <td><%= r.code %></td>
+      <td><%= r.guest_id %></td>
+      <td><%= r.room_id %></td>
+      <td><%= r.check_in %></td>
+      <td><%= r.check_out %></td>
+      <td><%= r.status %></td>
+      <td><%= link_to "Show", reservation_path(r) %></td>
+    </tr>
+  <% end %>
+</table>

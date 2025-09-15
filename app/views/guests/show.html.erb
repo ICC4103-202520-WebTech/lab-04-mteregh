@@ -1,0 +1,7 @@
+<h1><%= @guest.first_name %> <%= @guest.last_name %></h1>
+<ul>
+  <li>Email: <%= @guest.email %></li>
+  <li>Phone: <%= @guest.phone %></li>
+  <li>Document ID: <%= @guest.document_id %></li>
+</ul>
+<p><%= link_to "Back to Guests", guests_path %></p>

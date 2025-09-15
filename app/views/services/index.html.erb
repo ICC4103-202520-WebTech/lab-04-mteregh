@@ -1,0 +1,17 @@
+<h1>Services</h1>
+<table border="1" cellpadding="6">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Active?</th>
+    <th></th>
+  </tr>
+  <% @services.each do |s| %>
+    <tr>
+      <td><%= s.name %></td>
+      <td>$ <%= s.price %></td>
+      <td><%= s.is_active ? "Yes" : "No" %></td>
+      <td><%= link_to "Show", service_path(s) %></td>
+    </tr>
+  <% end %>
+</table>

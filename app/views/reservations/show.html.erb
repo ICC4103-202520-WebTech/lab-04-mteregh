@@ -1,0 +1,11 @@
+<h1>Reservation <%= @reservation.code %></h1>
+<ul>
+  <li>Guest ID: <%= @reservation.guest_id %></li>
+  <li>Room ID: <%= @reservation.room_id %></li>
+  <li>Check-in: <%= @reservation.check_in %></li>
+  <li>Check-out: <%= @reservation.check_out %></li>
+  <li>Status: <%= @reservation.status %></li>
+  <li>Adults: <%= @reservation.adults %></li>
+  <li>Children: <%= @reservation.children %></li>
+</ul>
+<p><%= link_to "Back to Reservations", reservations_path %></p>

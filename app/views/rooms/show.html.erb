@@ -1,0 +1,7 @@
+<h1>Room <%= @room.number %></h1>
+<ul>
+  <li>Type: <%= @room.room_type %></li>
+  <li>Price: $ <%= @room.price %></li>
+  <li>Status: <%= @room.status %></li>
+</ul>
+<p><%= link_to "Back to Rooms", rooms_path %></p>
